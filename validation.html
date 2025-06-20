@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Отправка формы</h1>
+
+        <form action="" class="form" id="add-form">
+            <div class="input-box">
+                <input data-required="true" type="text" class="input-field" placeholder="Имя">
+            </div>
+            <div class="input-box">
+                <input data-max-length="15" type="text" class="input-field" placeholder="Фамилия">
+            </div>
+            <div class="input-box">
+                <input data-required="true" data-max-length="15" data-min-length="2" type="text" class="input-field" placeholder="Отчество">
+            </div>
+            <div class="input-box">
+                <input data-required="true" data-max-length="15" data-min-length="2" type="password" class="input-field" placeholder="Пароль">
+            </div>
+            <div class="input-box">
+                <input data-required="true" data-max-length="15" data-min-length="2" type="password" class="input-field" placeholder="Проверка пароля">
+            </div>
+            <div class="input-box">
+                <span>Пол:</span>
+                <input type="radio" name="sate" id="male" value="Мужской">
+                <label for="male">Мужской</label>
+                <input type="radio" name="sate" id="female" value="Женский">
+                <label for="female">Женский</label>
+            </div><br />
+
+            <button type="submit" class="send-btn">Отправить</button>
+        </form>
+
+    </div>
+
+    <script src="validation.js"></script>
+
+</body>
+</html>
